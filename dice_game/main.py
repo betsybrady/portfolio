@@ -129,7 +129,7 @@ class Game(object):
         else:
             # Uses input to check if enter is pressed
             print("Trying for {}, press enter to throw again".format(self.point))
-            input()
+            raw_input()
             return True
 
     # Function to play through a round
@@ -143,7 +143,7 @@ class Game(object):
             return
 
         print("Throw dice by pressing enter")
-        input()
+        raw_input()
         game_going = True
 
         # Uses output from play_roll to check if round is over
