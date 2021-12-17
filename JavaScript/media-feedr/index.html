@@ -1,0 +1,71 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title>Media Feedr</title>
+      <link rel="stylesheet" href="styles/normalize.css" media="screen" charset="utf-8">
+      <link rel="stylesheet" href="styles/html5bp.css" media="screen" charset="utf-8">
+      <link rel="stylesheet" href="styles/style.css" media="screen" charset="utf-8">
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <header>
+          <section class="container">
+            <a id="home" href="#"><h1>Feedr</h1></a>
+            <nav>
+              <ul>
+                <li><a href="#">Media Type: <span id="filter">All</span></a>
+                  <ul>
+                      <li><a id="filter-board-games" href="#">Board Game</a></li>
+                      <li><a id="filter-video-games" href="#">Video Game</a></li>
+                      <li><a id="filter-movies" href="#">Movie</a></li>
+                      <li><a id="filter-all" href="#">All</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul>
+                <li><a href="#">Sort By: <span id="sort">Rating</span></a>
+                  <ul>
+                      <li><a id="sort-name" href="#">Name</a></li>
+                      <li><a id="sort-rating" href="#">Rating</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <section id="search">
+                <input id="search-bar" type="text" name="name" value="">
+                <a id="search-link" href="#"><img src="images/search.png" alt="" /></a>
+              </section>
+            </nav>
+            <div class="clearfix"></div>
+          </section>
+        </header>
+        <div id="popUp" class="loader hidden">
+          <a id="close-popUp" href="#" class="closePopUp"><b>X</b></a>
+          <div class="container">
+            <h1 id="popUp-title"></h1>
+            <img id="popUp-image" src="#">
+            <p id="popUp-descrip"></p>
+            <a id="popUp-link" href="#" class="popUpAction" target="_blank">Source</a>
+          </div>
+        </div>
+        <section id="main" class="container">
+          <div id="articles-main"></div>
+          <div id="loader"></div>
+          <div id="no-results" class="hidden"><h3>No results found.</h3></div>
+        </section>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+        <script src="js/app.js" type="module"></script>
+
+    </body>
+</html>

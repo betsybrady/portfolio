@@ -1,0 +1,291 @@
+/* General styles */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#popUp {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:  #fff;
+  display: flex;
+}
+
+#popUp .closePopUp {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 40px;
+  color: #2e8ed7;
+  text-decoration: none;
+}
+
+#popUp .container {
+  margin-top: 80px;
+}
+
+#popUp h1 {
+  margin-bottom: 0;
+}
+
+#popUp .popUpAction {
+  padding: 10px;
+  background-color: #2e8ed7;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transform: 0.2s all;
+  display: inline-block;
+}
+
+#popUp .popUpAction:hover {
+  color: #2e8ed7;
+  background: #fff;
+}
+
+#popUp img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  height: 250px;
+  border-radius: 10px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+#popUp .popUp-container {
+  flex: 1;
+  padding: 5px;
+}
+
+/* Header styles */
+header {
+  background-color: #2e8ed7;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+header h1 {
+  color: #FFF;
+  padding: 10px 2%;
+  margin: 0;
+  width: 16%;
+  float: left;
+  padding-left: 0;
+}
+
+/* Header navigation bar */
+header nav {
+  padding: 10px 2%;
+  width: 76%;
+  float: right;
+  text-align: right;
+  line-height: 30px;
+  margin-top: 0;
+  position: relative;
+  vertical-align: middle;
+}
+
+/* Search bar */
+header #search {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+
+header #search a {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-left: 20px;
+  border-radius: 10px;
+}
+
+header #search a:hover {
+  background: #0969b3;
+
+}
+
+header #search img {
+  width: 100%;
+  display: block;
+
+}
+
+header #search input {
+  position: absolute;
+  right: 10px;
+  top:0px;
+  padding: 10px;
+  width: 0px;
+  transition: 0.2s all;
+  border-radius: 10px;
+  background-color: #0969b3;
+  color: #FFF;
+  border: 0px;
+  visibility: hidden;
+
+}
+
+header #search.active input {
+  width:250px;
+  visibility: visible;
+}
+
+header #search.active a {
+  background: #0969b3;
+}
+
+header nav a {
+  display:block;
+	padding:0 10px;
+	color:#FFF;
+	font-size:16px;
+	line-height: 40px;
+	text-decoration:none;
+  transition: 0.2s all;
+}
+
+header nav a:hover {
+  background-color: #fff;
+  color: #0969b3;
+}
+
+nav ul {
+	padding:0;
+	margin:0;
+  margin-right: 10px;
+	list-style: none;
+	position: relative;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  right: 350px;
+	}
+
+nav ul li {
+	display:inline-block;
+	background-color: #0969b3;
+  position: relative;
+  border-radius: 10px;
+  width:250px;
+  text-align:left;
+}
+
+nav ul ul {
+	display: none;
+	position: absolute;
+	top: 40px;
+  right: -10px;
+}
+
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+	display:inherit;
+}
+
+/* First Tier Dropdown */
+nav ul ul li {
+	width:250px;
+	float:none;
+	display:list-item;
+	position: relative;
+  border-radius: 0px;
+  text-align:left;
+}
+
+/* Main Section */
+#main {
+  margin-top: 65px;
+}
+
+/* Individual Article Styling */
+.article {
+  border-bottom: 1px solid #ccc;
+  transition: 0.2s all;
+}
+
+.article:hover {
+  padding: 0 2%;
+  background-color: #eee;
+}
+
+.article .featuredImage {
+  width: 12%;
+  float: left;
+  margin: 1.5%;
+  max-width: 60px;
+}
+
+.article .featuredImage img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.article .articleContent {
+  width: 70%;
+  float: left;
+}
+
+.article .articleContent a {
+  text-decoration: none;
+}
+
+.article .articleContent h3 {
+  margin-bottom: 0;
+  color: #2e8ed7;
+}
+
+.article .articleContent h6 {
+  margin-top: 0;
+  color: #666;
+}
+
+.article .impressions {
+  width: 15%;
+  float: right;
+  font-size: 30px;
+  margin-top: 15px;
+  text-align: right;
+  color: #0969b3;
+}
+
+/* Loader */
+#loader {
+  visibility: visible;
+  border: 15px solid #dee9f0; /* Light grey */
+  border-top: 15px solid #2e8ed7; /* Blue */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+  margin-top: 50px;
+  left: 50%;
+  position: fixed;
+}
+
+#loader.hidden {
+  visibility: hidden;
+}
+
+#no-results {
+  margin-top: 90px;
+  color: #2e8ed7;
+}
+
+#no-results.hidden {
+  visibility: hidden;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
