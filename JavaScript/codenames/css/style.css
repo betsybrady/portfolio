@@ -1,0 +1,548 @@
+/* Add fonts */
+@font-face {
+    font-family: SkyFallDone;
+    src: url(../fonts/SkyFall\ Done.ttf);
+}
+
+@font-face {
+    font-family: Skyfall;
+    src: url(../fonts/Skyfall.ttf);
+}
+
+@font-face {
+    font-family: TexGyreAdventor;
+    src: url(../fonts/texgyreadventor-regular.ttf) format("opentype");
+}
+
+body {
+    background-color: #38383a;
+    font-family: TexGyreAdventor;
+}
+
+header {
+    background-color: #252526;
+    font-family: Skyfall;
+    text-align: center;
+    color: #cba611;
+    font-size: 50px;
+    padding: 25px;
+    position: sticky;
+}
+
+/* User lobby */
+#user-lobby {
+    font-size: 30px;
+    margin-top: 50px;
+    background-color: #252526;
+    padding: 20px;
+    border-radius: 10px;
+    width: 270px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#user-lobby input {
+    padding: 10px;
+    display: block;
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f4ece7;
+    color: #252526;
+}
+
+#user-lobby input::placeholder {
+    color: #989594;
+}
+
+#user-lobby button {
+    padding: 10px;
+    display: block;
+    width: 270px;
+    border-radius: 5px;
+    border: 3px solid #cba611;
+    background-color: #cba611;
+    margin-top: 20px;
+    color: #f4ece7;
+}
+
+#user-lobby button:hover {
+    background-color: #a48715;
+    border: 3px solid #725f13;
+    cursor: pointer;
+}
+
+/* Room lobby */
+#room-lobby {
+    font-size: 30px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#room-lobby div {
+    margin-left: 25px;
+    margin-right: 25px;
+    background-color: #252526;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#room-lobby input {
+    padding: 10px;
+    display: block;
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f4ece7;
+    color: #252526;
+}
+
+#room-lobby input::placeholder {
+    color: #989594;
+}
+
+#room-lobby button {
+    padding: 10px;
+    display: block;
+    width: 270px;
+    border-radius: 5px;
+    border: 3px solid #cba611;
+    background-color: #cba611;
+    color: #f4ece7;
+}
+
+#room-lobby #join-room {
+    margin-top: 20px;
+}
+
+#room-lobby #create-room {
+    margin-top: 40px;
+}
+
+#room-lobby button:hover {
+    background-color: #a48715;
+    border: 3px solid #725f13;
+    cursor: pointer;
+}
+
+/* Chosen Room Lobby */
+#chosen-room-lobby {
+    font-size: 30px;
+    margin-top: 25px;
+    border-radius: 10px;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#chosen-room-lobby p {
+    text-align: center;
+    color: #cba611;
+}
+
+#chosen-room-lobby #teams {
+    display: flex;
+}
+
+#chosen-room-lobby #teams p {
+    color: #f4ece7;
+}
+
+#chosen-room-lobby #teams div {
+    flex: 1;
+    border-radius: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+    width: 500px;
+}
+
+#chosen-room-lobby #red-team {
+    background-color: #af2929;
+}
+
+#chosen-room-lobby #blue-team {
+    background-color: #1e51a8;
+}
+
+#chosen-room-lobby ol {
+    color: #f4ece7;
+}
+
+#chosen-room-lobby li {
+    font-size: 25px;
+    margin-left: 25px;
+}
+
+#chosen-room-lobby li:first-child {
+    margin-top: 20px;
+}
+
+#chosen-room-lobby #team-buttons {
+    display: flex;
+    margin-top: 50px;
+}
+
+#chosen-room-lobby button {
+    padding: 10px;
+    display: block;
+    width: 270px;
+    border-radius: 5px;
+    border: 3px solid #cba611;
+    background-color: #cba611;
+    margin: auto;
+    margin-top: 20px;
+    color: #f4ece7;
+    margin-bottom: 50px;
+}
+
+#chosen-room-lobby button:hover {
+    background-color: #a48715;
+    border: 3px solid #725f13;
+    cursor: pointer;
+}
+
+#chosen-room-lobby #red-team-button {
+    border: 3px solid #af2929;
+    background-color: #af2929;
+}
+
+#chosen-room-lobby #red-team-button:hover {
+    background-color: #802121;
+    border: 3px solid #541616;
+}
+
+#chosen-room-lobby #blue-team-button {
+    border: 3px solid #1e51a8;
+    background-color: #1e51a8;
+}
+
+#chosen-room-lobby #blue-team-button:hover {
+    background-color: #173974;
+    border: 3px solid #122b55;
+}
+
+/* Game Room */
+#room {
+    font-size: 30px;
+    margin-top: 25px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#room #grid div {
+    display: flex;
+    justify-content: center;
+}
+
+#room button {
+    padding: 10px;
+    width: 270px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+#room #guesser button {
+    border: 3px solid #cba611;
+    background-color: #cba611;
+    color: #f4ece7;
+}
+
+#room #guesser button:hover {
+    background-color: #a48715;
+    border: 3px solid #725f13;
+    cursor: pointer;
+}
+
+#room #cluegiver button {
+    border: 3px solid #cba611;
+    background-color: #cba611;
+    color: #f4ece7;
+}
+
+#room #cluegiver button:hover {
+    background-color: #a48715;
+    border: 3px solid #725f13;
+    cursor: pointer;
+}
+
+#room .unrevealed {
+    border: 5px solid #f4ece7;
+    background-color: #f4ece7;
+    color: #252526;
+}
+
+#room .unrevealed:hover {
+    background-color: #ccc2ba;
+    border: 5px solid #68605a;
+    cursor: pointer;
+}
+
+/* CM buttons */
+
+#room .cm-unrevealed {
+    background-color: #f4ece7;
+}
+
+#room .cm-unrevealed:hover {
+    cursor: auto
+}
+
+#room .red-hint {
+    border: 5px solid #af2929;
+    color: #af2929;
+    background-color: #f7cbcb;
+
+}
+
+#room .blue-hint {
+    border: 5px solid #1e51a8;
+    color: #1e51a8;
+    background-color: #c8d8f1;
+
+}
+
+#room .gray-hint {
+    border: 5px solid #656568;
+    color: #656568;
+    background-color: #e2e2e4;
+
+}
+
+#room .black-hint {
+    border: 5px solid #252526;
+    color: #252526;
+    background-color: #8c8c8d;
+
+}
+
+/* selected */
+#room .selected {
+    border: 5px solid #cba611;
+}
+
+#room .selected:hover {
+    border: 5px solid #cba611;
+}
+
+/* no guessing */
+#room .no-guess button {
+    pointer-events: none;
+}
+
+/* Revealed buttons */
+#room .red {
+    border: 5px solid #af2929;
+    background-color: #af2929;
+    color: #f4ece7;
+}
+
+#room .red:hover {
+    border: 5px solid #af2929;
+    background-color: #af2929;
+    color: #f4ece7;
+    cursor: auto;
+}
+
+#room .blue {
+    border: 5px solid #1e51a8;
+    background-color: #1e51a8;
+    color: #f4ece7;
+}
+
+#room .blue:hover {
+    border: 5px solid #1e51a8;
+    background-color: #1e51a8;
+    color: #f4ece7;
+    cursor: auto;
+}
+
+#room .gray {
+    border: 5px solid #656568;
+    background-color: #656568;
+    color: #252526;
+}
+
+#room .gray:hover {
+    border: 5px solid #656568;
+    background-color: #656568;
+    color: #252526;
+    cursor: auto;
+}
+
+#room .black {
+    border: 5px solid #252526;
+    background-color: #252526;
+    color: #f4ece7;
+}
+
+#room .black:hover {
+    border: 5px solid #252526;
+    background-color: #252526;
+    color: #f4ece7;
+    cursor: auto;
+}
+
+/* Clue */
+#room #top {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #f4ece7;
+    padding: 5px;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+
+}
+
+#room .red-text {
+    background-color: #af2929;
+}
+
+#room .blue-text {
+    background-color: #1e51a8;
+}
+
+/* Guesser panel */
+#room #guesser {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+/* Cluegiver panel */
+#room #cluegiver {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#room #cluegiver input {
+    padding: 10px;
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f4ece7;
+    color: #252526;
+    margin: 10px;
+    margin-right: 5px;
+}
+
+#room #cluegiver input::placeholder {
+    color: #989594;
+}
+
+#room #cluegiver select {
+    height: 60px;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    margin-left: 0px;
+    background-color: #f4ece7;
+    color: #252526;
+    border: none;
+}
+
+/* Rename Popup */
+#rename-popup {
+    background-color: #252526;
+    position: fixed;
+    bottom: 0;
+    font-size: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 80px;
+    padding-top: 0px;
+}
+
+#rename-popup .active {
+    display: block;
+}
+
+#rename-popup input {
+    padding: 10px;
+    display: block;
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f4ece7;
+    color: #252526;
+}
+
+#rename-popup input::placeholder {
+    color: #989594;
+}
+
+#rename-popup button {
+    padding: 10px;
+    display: block;
+    width: 270px;
+    border-radius: 5px;
+    border: 3px solid #cba611;
+    background-color: #cba611;
+    margin: auto;
+    margin-top: 20px;
+    color: #f4ece7;
+}
+
+#rename-popup button:hover {
+    background-color: #a48715;
+    border: 3px solid #725f13;
+    cursor: pointer;
+}
+
+#rename-popup p {
+    color: #cba611;
+    padding: 10px;
+    border-radius: 5px;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #252526;
+    position: fixed;
+    bottom: 0;
+    font-size: 30px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+footer a {
+    color: #cba611;
+    text-decoration: none;
+}
+
+/* Hidden */
+.hidden {
+    display: none;
+}
+
+.hidden div {
+    display: none;
+}
+
+.hidden button {
+    display: none;
+}
+
+.hidden input {
+    display: none;
+}
+
+.hidden select {
+    display: none;
+}
+
+.hidden p {
+    display: none;
+}

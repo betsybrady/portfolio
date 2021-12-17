@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Codenames</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header id="header">CODENAMES</header>
+
+    <div id="user-lobby">
+        <input id="create-user-text" placeholder="Enter name">
+        <button id="create-user">ENTER</button>
+    </div>
+
+    <div id="room-lobby" class="hidden">
+        <div>
+            <button id="create-room">CREATE ROOM</button>
+        </div>
+        <div>
+            <input id="join-room-text" placeholder="Room Code">
+            <button id="join-room">JOIN ROOM</button>
+        </div>
+    </div>
+
+    <div id="chosen-room-lobby" class="hidden">
+        <p>PLAYERS</p>
+        <div id="teams">
+            <div id="red-team">
+                <ol id="red-team-list">RED TEAM:</ol>
+                <p id="red-codemaster-label">CODEMASTER: </p>
+            </div>
+            <div id="blue-team">
+                <ol id="blue-team-list">BLUE TEAM:</ol>
+                <p id="blue-codemaster-label">CODEMASTER: </p>
+            </div>
+        </div>
+        <div id="team-buttons">
+            <button id="red-team-button">JOIN RED</button>
+            <button id="blue-team-button">JOIN BLUE</button>
+        </div>
+        <button id="codemaster-button">BECOME CODEMASTER</button>
+        <button id="start-button">START</button>
+    </div>
+
+    <div id="room" class="hidden">
+        <div id="top">
+            <p id="turn-info"> TEAM IS </p>
+            <p id="clue">CLUE:</p>
+        </div>
+        <div id = "grid">
+            <div id="row1">
+                <button id="button-r1c1">Text</button>
+                <button id="button-r1c2">Text</button>
+                <button id="button-r1c3">Text</button>
+                <button id="button-r1c4">Text</button>
+                <button id="button-r1c5">Text</button>
+            </div>
+            <div id="row2">
+                <button id="button-r2c1">Text</button>
+                <button id="button-r2c2">Text</button>
+                <button id="button-r2c3">Text</button>
+                <button id="button-r2c4">Text</button>
+                <button id="button-r2c5">Text</button>
+            </div>
+            <div id="row3">
+                <button id="button-r3c1">Text</button>
+                <button id="button-r3c2">Text</button>
+                <button id="button-r3c3">Text</button>
+                <button id="button-r3c4">Text</button>
+                <button id="button-r3c5">Text</button>
+            </div>
+            <div id="row4">
+                <button id="button-r4c1">Text</button>
+                <button id="button-r4c2">Text</button>
+                <button id="button-r4c3">Text</button>
+                <button id="button-r4c4">Text</button>
+                <button id="button-r4c5">Text</button>
+            </div>
+            <div id="row5">
+                <button id="button-r5c1">Text</button>
+                <button id="button-r5c2">Text</button>
+                <button id="button-r5c3">Text</button>
+                <button id="button-r5c4">Text</button>
+                <button id="button-r5c5">Text</button>
+            </div>
+        </div>
+        <div id="guesser">
+            <button id="guess-button">GUESS</button>
+            <button id="pass-button">PASS</button>
+        </div>
+        <div id="cluegiver">
+            <input id="cluegiver-text" placeholder="Clue">
+            <select id="cluegiver-number">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="0">0</option>
+                <option value="-1">∞</option>
+            </select>
+            <button id="cluegiver-button">GIVE CLUE</button>
+        </div>
+    </div>
+
+    <div id="rename-popup" class="hidden">
+        <p id="rename-name-label"></p>
+        <input id="rename-user-text" placeholder="Enter new name">
+        <button id="rename-user">RENAME</button>
+    </div>
+
+    <footer id="footer" class="hidden"><a id="popup-button" href="#">EDIT</a></footer>
+
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-analytics.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdn.ably.io/lib/ably.min-1.js"></script>
+    <script src="js/main.js" type="module"></script>
+</body>
+
+</html>
